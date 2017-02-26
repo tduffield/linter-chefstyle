@@ -1,7 +1,7 @@
 {
   "name": "linter-chefstyle",
   "main": "./lib/index.coffee",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Lint Chef Software Ruby code on the fly, using chefstyle",
   "engines": {
     "atom": "*"
