@@ -1,0 +1,69 @@
+{
+  "name": "linter-chefstyle",
+  "main": "./lib/index.coffee",
+  "version": "0.1.0",
+  "description": "Lint Chef Software Ruby code on the fly, using chefstyle",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {
+    "atom-linter": "^9.0.0",
+    "escape-html": "^1.0.3"
+  },
+  "package-deps": [
+    "linter"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.1.0": "provideLinter"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tduffield/linter-chefstyle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tduffield/linter-chefstyle/issues"
+  },
+  "license": "MIT",
+  "coffeelintConfig": {
+    "max_line_length": {
+      "value": 120,
+      "level": "warn"
+    },
+    "no_empty_param_list": {
+      "level": "error"
+    },
+    "arrow_spacing": {
+      "level": "error"
+    },
+    "no_interpolation_in_single_quotes": {
+      "level": "error"
+    },
+    "no_debugger": {
+      "level": "error"
+    },
+    "prefer_english_operator": {
+      "level": "error"
+    },
+    "colon_assignment_spacing": {
+      "spacing": {
+        "left": 0,
+        "right": 1
+      },
+      "level": "error"
+    },
+    "braces_spacing": {
+      "spaces": 0,
+      "level": "error"
+    },
+    "spacing_after_comma": {
+      "level": "error"
+    },
+    "no_stand_alone_at": {
+      "level": "error"
+    }
+  }
+}
